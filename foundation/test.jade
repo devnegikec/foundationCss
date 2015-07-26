@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    title Foundation Grid
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/foundation.css")
+    link(rel="stylesheet", href="foundationicons/foundation-icons.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+body
+
+  .row
+    .column.small-4
+      h1 SiteName
+
+    .column.small-8
+      ul.inline-list
+        li: a.fi-mail(href="")  NewsLatter
+        li: a.fi-rss(href="")  RSS
+        li |
+        li: form.row.collapse
+          .column.small-4: label Rewe
+          .column.small-6: input(type="text")
+          .column.small-2: a.button.postfix(href="") Go
+  .row
+    .column.small-12
+      dl.sub-nav
+        dd: a(href="") Home
+        dd: a(href="") Comics
+        dd: a(href="") Movies
+        dd: a(href="") Concerts
+        dd: a(href="") YouTube
